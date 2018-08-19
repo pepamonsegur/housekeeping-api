@@ -9,8 +9,9 @@ class Task(object):
         self.title = ''
         self.description = ''
         self.done = 0
-        self.useraccess = compose(useraccess, Useraccess)
+        # self.useraccess = compose(useraccess, Useraccess)
 
+    # POST
     def insert(self):
         sql = """INSERT INTO task (title, description, done, useraccess)
             VALUES ('{title}', '{description}', {done}, '{useraccess}')
@@ -19,6 +20,7 @@ class Task(object):
                     useraccess=self.useraccess.useraccess_id)
         self.task_id = DBQuery().execute(sql)
 
+    # PUT
     def update(self):
         sql = """UPDATE task
                  SET    title = '{title}',
@@ -30,7 +32,7 @@ class Task(object):
             description=self.description, done=self.done, useraccess=self.useraccess)
         DBQuery().execute(sql)
 
-    # Metodo Get
+    # GET
     def select(self):
         sql = """SELECT title, description, done, useraccess
                  FROM   task
@@ -43,10 +45,12 @@ class Task(object):
         self.description = datos[1]
         self.useraccess = make(Useraccess, datos[3])
 
+    # DELETE
     def delete(self):
         sql = """DELETE FROM task WHERE task_id = {id}""".format(
             id=self.task_id)
         DBQuery().execute(sql)
+
 
 
 class TaskView(object):

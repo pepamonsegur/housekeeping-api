@@ -1,5 +1,5 @@
 /*---------------------------------------------
-    CREACIÓN DE TABLAS
+    TABLE CREATION
 ---------------------------------------------*/
 
 CREATE TABLE IF NOT EXISTS useraccess (
@@ -18,3 +18,9 @@ CREATE TABLE IF NOT EXISTS task (
         REFERENCES useraccess (useraccess_id)
         ON DELETE SET NULL
 ) ENGINE=InnoDB;
+
+
+#DUMMY DATA TO PREFILL TABLE
+INSERT INTO task(title, description, done) VALUES ('room', '374', FALSE);
+INSERT INTO task(title, description, done) VALUES ('room', '312', TRUE);
+INSERT INTO task(title, description, done) VALUES ('room', '112', TRUE);

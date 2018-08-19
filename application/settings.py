@@ -4,7 +4,7 @@ from sys import path
 # BASE DE DATOS LOCAL
 DB_HOST = 'localhost'
 DB_USER = 'root'
-DB_PASS = 'pepiniyo'
+DB_PASS = ''
 DB_NAME = 'housekeeping'
 
 APP_DIR = path[len(path) - 1]
