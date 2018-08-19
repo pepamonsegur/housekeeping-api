@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import json
+
 from core.db import DBQuery
 
 
@@ -38,12 +40,12 @@ class Task(object):
                  FROM   task
                  WHERE  task_id = {id}
         """.format(id=self.task_id)
-        datos = DBQuery().execute(sql)[0]
+        data = DBQuery().execute(sql)[0]
 
         # propiedades simples
-        self.title = datos[0]
-        self.description = datos[1]
-        self.useraccess = make(Useraccess, datos[3])
+        self.title = data[0]
+        self.description = data[1]
+        self.useraccess = make(Useraccess, data[3])
 
     # DELETE
     def delete(self):
@@ -52,11 +54,23 @@ class Task(object):
         DBQuery().execute(sql)
 
 
+    def select_all(self):
+        sql = """SELECT title, description, done, useraccess
+                 FROM   task
+        """
+        data = DBQuery().execute(sql)
+        return data
+
+
 
 class TaskView(object):
 
+    def __init__(self):
+        self.model = Task()
+
     def list(self):
-        return str("Muestro lista")
+        data = self.model.select_all()
+        return json.dumps(data)
 
 
 

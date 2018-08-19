@@ -9,6 +9,8 @@ from beaker.middleware import SessionMiddleware
 from core.postdatahandler import POSTDataHandler
 from core.helpers.apphandler import AppHandler
 
+from modules.task import TaskController
+
 # url funcionando: http://housekeeping-api.local/housekeeping/v1.0/task/list/
 
 def front_controller(environ, start_response):
@@ -22,18 +24,18 @@ def front_controller(environ, start_response):
     modulo = salida[1]
     recurso = salida[2]
 
-    try:
-        exec "from modules.{} import {}".format(modulo, controlador)
-        exec "controller = {}()".format(controlador)
-        exec "salida = {}().{}()".format(controlador, recurso)
-    except:
-        salida = str("modulo no existe")
-
+    # try:
+    #     exec "from modules.{} import {}".format(modulo, controlador)
+    #     exec "controller = {}()".format(controlador)
+    #     exec "salida = {}().{}()".format(controlador, recurso)
+    # except:
+    #     salida = str("modulo no existe")
 
     content_type = ('Content-Type', 'text/html; charset=utf-8')
     cabeceras.append(content_type)
 
     start_response(respuesta, cabeceras)
+    salida = TaskController().list()
     return str(salida)
 
 

@@ -3883,3 +3883,229 @@
 [Sun Aug 19 23:15:48.412866 2018] [wsgi:error] [pid 21207] [client 127.0.0.1:55036]     exec "from modules.{} import {}".format(modulo, controlador), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
 [Sun Aug 19 23:15:48.412876 2018] [wsgi:error] [pid 21207] [client 127.0.0.1:55036]   File "<string>", line 1, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
 [Sun Aug 19 23:15:48.412896 2018] [wsgi:error] [pid 21207] [client 127.0.0.1:55036] ImportError: No module named default, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:05.714514 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030] mod_wsgi (pid=21593): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Sun Aug 19 23:36:05.715304 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030] Traceback (most recent call last):
+[Sun Aug 19 23:36:05.715394 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__
+[Sun Aug 19 23:36:05.715599 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]     return self.wrap_app(environ, session_start_response)
+[Sun Aug 19 23:36:05.715676 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 30, in front_controller
+[Sun Aug 19 23:36:05.715819 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]     exec "salida = {}().{}()".format(controlador, recurso)
+[Sun Aug 19 23:36:05.715868 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]   File "<string>", line 1, in <module>
+[Sun Aug 19 23:36:05.715926 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 91, in list
+[Sun Aug 19 23:36:05.716062 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]     return self.view.list()
+[Sun Aug 19 23:36:05.716096 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 62, in list
+[Sun Aug 19 23:36:05.716264 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030]     datos = DBQuery().execute(sql)[0]
+[Sun Aug 19 23:36:05.716346 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60030] IndexError: tuple index out of range
+[Sun Aug 19 23:36:06.081286 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035] mod_wsgi (pid=21593): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:06.081431 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:06.081495 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:06.081555 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035]     return self.wrap_app(environ, session_start_response), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:06.081585 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 28, in front_controller, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:06.081626 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035]     exec "from modules.{} import {}".format(modulo, controlador), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:06.081661 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035]   File "<string>", line 1, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:36:06.081719 2018] [wsgi:error] [pid 21593] [client 127.0.0.1:60035] ImportError: No module named default, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.421706 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280] mod_wsgi (pid=21614): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Sun Aug 19 23:37:07.421827 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280] Traceback (most recent call last):
+[Sun Aug 19 23:37:07.421847 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__
+[Sun Aug 19 23:37:07.421942 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]     return self.wrap_app(environ, session_start_response)
+[Sun Aug 19 23:37:07.421958 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 30, in front_controller
+[Sun Aug 19 23:37:07.422012 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]     exec "salida = {}().{}()".format(controlador, recurso)
+[Sun Aug 19 23:37:07.422025 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]   File "<string>", line 1, in <module>
+[Sun Aug 19 23:37:07.422037 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 91, in list
+[Sun Aug 19 23:37:07.422088 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]     return self.view.list()
+[Sun Aug 19 23:37:07.422100 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 62, in list
+[Sun Aug 19 23:37:07.422117 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280]     datos = DBQuery().execute(sql)[0]
+[Sun Aug 19 23:37:07.422135 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60280] IndexError: tuple index out of range
+[Sun Aug 19 23:37:07.756146 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282] mod_wsgi (pid=21614): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.756185 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.756210 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.756246 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282]     return self.wrap_app(environ, session_start_response), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.756259 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 28, in front_controller, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.756278 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282]     exec "from modules.{} import {}".format(modulo, controlador), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.756288 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282]   File "<string>", line 1, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:07.756309 2018] [wsgi:error] [pid 21614] [client 127.0.0.1:60282] ImportError: No module named default, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.458631 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482] mod_wsgi (pid=21648): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Sun Aug 19 23:37:56.458740 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482] Traceback (most recent call last):
+[Sun Aug 19 23:37:56.458759 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__
+[Sun Aug 19 23:37:56.458870 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]     return self.wrap_app(environ, session_start_response)
+[Sun Aug 19 23:37:56.458895 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller
+[Sun Aug 19 23:37:56.458944 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]     salida = TaskController().list()
+[Sun Aug 19 23:37:56.458957 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 91, in list
+[Sun Aug 19 23:37:56.459015 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]     return self.view.list()
+[Sun Aug 19 23:37:56.459037 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 62, in list
+[Sun Aug 19 23:37:56.459055 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482]     datos = DBQuery().execute(sql)[0]
+[Sun Aug 19 23:37:56.459071 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60482] IndexError: tuple index out of range
+[Sun Aug 19 23:37:56.796109 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483] mod_wsgi (pid=21648): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796154 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796179 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796218 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]     return self.wrap_app(environ, session_start_response), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796233 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796258 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]     salida = TaskController().list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796271 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 91, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796296 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]     return self.view.list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796313 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 62, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796342 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483]     datos = DBQuery().execute(sql)[0], referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:37:56.796386 2018] [wsgi:error] [pid 21648] [client 127.0.0.1:60483] IndexError: tuple index out of range, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.384890 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528] mod_wsgi (pid=21769): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module.
+[Sun Aug 19 23:58:24.384968 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528] mod_wsgi (pid=21769): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Sun Aug 19 23:58:24.384986 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528] Traceback (most recent call last):
+[Sun Aug 19 23:58:24.385004 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>
+[Sun Aug 19 23:58:24.385079 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528]     from modules.task import TaskController
+[Sun Aug 19 23:58:24.385095 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>
+[Sun Aug 19 23:58:24.385165 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528]     import requests
+[Sun Aug 19 23:58:24.385187 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65528] ImportError: No module named requests
+[Sun Aug 19 23:58:24.710108 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529] mod_wsgi (pid=21769): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.710130 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529] mod_wsgi (pid=21769): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.710157 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.710180 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.710210 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529]     from modules.task import TaskController, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.710221 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.710238 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529]     import requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:58:24.710264 2018] [wsgi:error] [pid 21769] [client 127.0.0.1:65529] ImportError: No module named requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:20.726608 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373] mod_wsgi (pid=21803): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module.
+[Sun Aug 19 23:59:20.726694 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373] mod_wsgi (pid=21803): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Sun Aug 19 23:59:20.726712 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373] Traceback (most recent call last):
+[Sun Aug 19 23:59:20.726729 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>
+[Sun Aug 19 23:59:20.726810 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373]     from modules.task import TaskController
+[Sun Aug 19 23:59:20.726844 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>
+[Sun Aug 19 23:59:20.726927 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373]     import requests
+[Sun Aug 19 23:59:20.726948 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49373] ImportError: No module named requests
+[Sun Aug 19 23:59:21.170342 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374] mod_wsgi (pid=21804): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:21.170425 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374] mod_wsgi (pid=21804): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:21.170443 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:21.170461 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:21.170530 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374]     from modules.task import TaskController, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:21.170543 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:21.170591 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374]     import requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Sun Aug 19 23:59:21.170611 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49374] ImportError: No module named requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:05.675667 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556] mod_wsgi (pid=21803): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module.
+[Mon Aug 20 00:00:05.675728 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556] mod_wsgi (pid=21803): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:00:05.675757 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556] Traceback (most recent call last):
+[Mon Aug 20 00:00:05.675775 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>
+[Mon Aug 20 00:00:05.675803 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556]     from modules.task import TaskController
+[Mon Aug 20 00:00:05.675813 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>
+[Mon Aug 20 00:00:05.675877 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556]     import requests
+[Mon Aug 20 00:00:05.675898 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49556] ImportError: No module named requests
+[Mon Aug 20 00:00:06.048927 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557] mod_wsgi (pid=21804): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.048989 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557] mod_wsgi (pid=21804): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.049020 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.049040 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.049070 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557]     from modules.task import TaskController, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.049081 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.049214 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557]     import requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.049244 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49557] ImportError: No module named requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.063122 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558] mod_wsgi (pid=21803): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module.
+[Mon Aug 20 00:00:06.063170 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558] mod_wsgi (pid=21803): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:00:06.063189 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558] Traceback (most recent call last):
+[Mon Aug 20 00:00:06.063252 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>
+[Mon Aug 20 00:00:06.063285 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558]     from modules.task import TaskController
+[Mon Aug 20 00:00:06.063300 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>
+[Mon Aug 20 00:00:06.063319 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558]     import requests
+[Mon Aug 20 00:00:06.063337 2018] [wsgi:error] [pid 21803] [client 127.0.0.1:49558] ImportError: No module named requests
+[Mon Aug 20 00:00:06.424909 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563] mod_wsgi (pid=21804): Target WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py' cannot be loaded as Python module., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.424932 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563] mod_wsgi (pid=21804): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.424952 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.424972 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 12, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.425003 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563]     from modules.task import TaskController, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.425014 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 2, in <module>, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.425101 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563]     import requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:00:06.425160 2018] [wsgi:error] [pid 21804] [client 127.0.0.1:49563] ImportError: No module named requests, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:01:03.779601 2018] [wsgi:error] [pid 21831] [client 127.0.0.1:49795] mod_wsgi (pid=21831): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:01:03.779722 2018] [wsgi:error] [pid 21831] [client 127.0.0.1:49795] TypeError: 'NoneType' object is not iterable
+[Mon Aug 20 00:01:04.139616 2018] [wsgi:error] [pid 21831] [client 127.0.0.1:49796] mod_wsgi (pid=21831): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:01:04.139711 2018] [wsgi:error] [pid 21831] [client 127.0.0.1:49796] TypeError: 'NoneType' object is not iterable, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:01:38.392885 2018] [wsgi:error] [pid 21844] [client 127.0.0.1:49934] mod_wsgi (pid=21844): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:01:38.393010 2018] [wsgi:error] [pid 21844] [client 127.0.0.1:49934] TypeError: 'NoneType' object is not iterable
+[Mon Aug 20 00:01:38.758560 2018] [wsgi:error] [pid 21844] [client 127.0.0.1:49939] mod_wsgi (pid=21844): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:01:38.758602 2018] [wsgi:error] [pid 21844] [client 127.0.0.1:49939] TypeError: 'NoneType' object is not iterable, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:01:53.112274 2018] [wsgi:error] [pid 21855] [client 127.0.0.1:49996] mod_wsgi (pid=21855): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:01:53.112393 2018] [wsgi:error] [pid 21855] [client 127.0.0.1:49996] TypeError: 'NoneType' object is not iterable
+[Mon Aug 20 00:01:53.428217 2018] [wsgi:error] [pid 21855] [client 127.0.0.1:49997] mod_wsgi (pid=21855): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:01:53.428269 2018] [wsgi:error] [pid 21855] [client 127.0.0.1:49997] TypeError: 'NoneType' object is not iterable, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.135307 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418] mod_wsgi (pid=21967): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:07:52.135422 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418] Traceback (most recent call last):
+[Mon Aug 20 00:07:52.135445 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__
+[Mon Aug 20 00:07:52.135549 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]     return self.wrap_app(environ, session_start_response)
+[Mon Aug 20 00:07:52.135567 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller
+[Mon Aug 20 00:07:52.135624 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]     salida = TaskController().list()
+[Mon Aug 20 00:07:52.135639 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list
+[Mon Aug 20 00:07:52.135763 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]     return self.view.list()
+[Mon Aug 20 00:07:52.135777 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list
+[Mon Aug 20 00:07:52.135798 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418]     return json.dumps()
+[Mon Aug 20 00:07:52.135817 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51418] TypeError: dumps() takes at least 1 argument (0 given)
+[Mon Aug 20 00:07:52.472182 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423] mod_wsgi (pid=21967): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472225 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472251 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472295 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]     return self.wrap_app(environ, session_start_response), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472312 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472340 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]     salida = TaskController().list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472363 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472388 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]     return self.view.list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472402 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472425 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423]     return json.dumps(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:52.472448 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51423] TypeError: dumps() takes at least 1 argument (0 given), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.137948 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424] mod_wsgi (pid=21967): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:07:53.138040 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424] Traceback (most recent call last):
+[Mon Aug 20 00:07:53.138060 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__
+[Mon Aug 20 00:07:53.138090 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]     return self.wrap_app(environ, session_start_response)
+[Mon Aug 20 00:07:53.138100 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller
+[Mon Aug 20 00:07:53.138117 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]     salida = TaskController().list()
+[Mon Aug 20 00:07:53.138810 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list
+[Mon Aug 20 00:07:53.138847 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]     return self.view.list()
+[Mon Aug 20 00:07:53.138860 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list
+[Mon Aug 20 00:07:53.138877 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424]     return json.dumps()
+[Mon Aug 20 00:07:53.138895 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51424] TypeError: dumps() takes at least 1 argument (0 given)
+[Mon Aug 20 00:07:53.459277 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429] mod_wsgi (pid=21967): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459311 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459331 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459369 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]     return self.wrap_app(environ, session_start_response), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459387 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459416 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]     salida = TaskController().list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459432 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459458 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]     return self.view.list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459474 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459497 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429]     return json.dumps(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:07:53.459515 2018] [wsgi:error] [pid 21967] [client 127.0.0.1:51429] TypeError: dumps() takes at least 1 argument (0 given), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.321433 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546] mod_wsgi (pid=21979): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:08:23.321542 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546] Traceback (most recent call last):
+[Mon Aug 20 00:08:23.321562 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__
+[Mon Aug 20 00:08:23.321658 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]     return self.wrap_app(environ, session_start_response)
+[Mon Aug 20 00:08:23.321672 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller
+[Mon Aug 20 00:08:23.321744 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]     salida = TaskController().list()
+[Mon Aug 20 00:08:23.321761 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list
+[Mon Aug 20 00:08:23.321826 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]     return self.view.list()
+[Mon Aug 20 00:08:23.321844 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list
+[Mon Aug 20 00:08:23.321870 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546]     return json.dumps()
+[Mon Aug 20 00:08:23.321892 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51546] TypeError: dumps() takes at least 1 argument (0 given)
+[Mon Aug 20 00:08:23.647394 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551] mod_wsgi (pid=21979): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647426 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647446 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647477 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]     return self.wrap_app(environ, session_start_response), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647489 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647507 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]     salida = TaskController().list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647516 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647532 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]     return self.view.list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647541 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647561 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551]     return json.dumps(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:23.647584 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51551] TypeError: dumps() takes at least 1 argument (0 given), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.336844 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552] mod_wsgi (pid=21980): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'.
+[Mon Aug 20 00:08:24.336939 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552] Traceback (most recent call last):
+[Mon Aug 20 00:08:24.336962 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__
+[Mon Aug 20 00:08:24.337087 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]     return self.wrap_app(environ, session_start_response)
+[Mon Aug 20 00:08:24.337112 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller
+[Mon Aug 20 00:08:24.337176 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]     salida = TaskController().list()
+[Mon Aug 20 00:08:24.337188 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list
+[Mon Aug 20 00:08:24.337238 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]     return self.view.list()
+[Mon Aug 20 00:08:24.337258 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list
+[Mon Aug 20 00:08:24.337287 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552]     return json.dumps()
+[Mon Aug 20 00:08:24.337304 2018] [wsgi:error] [pid 21980] [client 127.0.0.1:51552] TypeError: dumps() takes at least 1 argument (0 given)
+[Mon Aug 20 00:08:24.663254 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557] mod_wsgi (pid=21979): Exception occurred processing WSGI script '/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py'., referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663329 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557] Traceback (most recent call last):, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663350 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]   File "/Library/Python/2.7/site-packages/beaker/middleware.py", line 155, in __call__, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663382 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]     return self.wrap_app(environ, session_start_response), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663393 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/controller.py", line 38, in front_controller, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663411 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]     salida = TaskController().list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663420 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 101, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663437 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]     return self.view.list(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663445 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]   File "/Users/josefinamonsegur/Sites/housekeeping-api/application/modules/task.py", line 73, in list, referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663460 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557]     return json.dumps(), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
+[Mon Aug 20 00:08:24.663517 2018] [wsgi:error] [pid 21979] [client 127.0.0.1:51557] TypeError: dumps() takes at least 1 argument (0 given), referer: http://housekeeping-api.local/housekeeping/v1.0/task/list/
